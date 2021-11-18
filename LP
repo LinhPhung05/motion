@@ -1,0 +1,12 @@
+import getDuration from '@ibm/motion/getDuration.js';
+console.log(getDuration(
+	200, // distance of motion in pixels
+	20, // size (area) of the element being animated. set to 20 for the standard size
+	'move', // property. 'move', 'scale', 'fade'
+	'mechanical', // motion mode. 'natural', 'mechanical'
+	'easeInOut', // easing. 'easeInOut', 'easeIn', 'easeOut'
+	'rem', // unit. supports 'rem' and 'px'. default is 'rem'
+    16 // unit size in pixel. default is 16.
+));
+
+// returns a float value, duration in ms.
